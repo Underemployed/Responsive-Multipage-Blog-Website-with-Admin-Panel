@@ -203,3 +203,37 @@ nav button{
     margin-bottom : 1.6rem;
 }
 
+.post:hover .post__thumbnail img{
+    filter:saturate(0);
+    transform: filter 500ms ease;
+}
+
+.post__author {
+    display: flex;
+    gap:1rem;
+    margin-top: 1.2rem;
+
+}
+
+.post__author-avatar{
+    width: 2.5rem;
+    height:2.5rem;
+    border-radius:var(--card-border-radius-3s); 
+    overflow:hidden;
+
+}
+
+
+/*==================================================================
+======================  FEATURED  ======================= 
+===================================================================*/
+
+.featured{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:4rem;
+}
+
+.featured .post  thumbnail{
+    height:fit-content;
+}
