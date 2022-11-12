@@ -218,7 +218,7 @@ nav button{
 .post__author-avatar{
     width: 2.5rem;
     height:2.5rem;
-    border-radius:var(--card-border-radius-3s); 
+    border-radius:var(--card-border-radius-3); 
     overflow:hidden;
 
 }
@@ -229,11 +229,104 @@ nav button{
 ===================================================================*/
 
 .featured{
+    margin: top 8rem;
+
+}
+
+featured_container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap:4rem;
+
+}
+.featured .post__thumbnail{
+    height:fit-content;
 }
 
-.featured .post  thumbnail{
-    height:fit-content;
+/*==================================================================
+======================  POST  ======================= 
+===================================================================*/
+
+.posts__container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:5rem;
+    margin-bottom: 5rem;
+}
+ 
+
+/*==================================================================
+======================  CATEGORY BUTTONS  ======================= 
+===================================================================*/
+
+.category__buttons{
+    padding:4rem  0;
+    border-top:2px solid var(--color-gray-900);
+    border-bottom:2px solid var(--color-gray-900);
+}
+
+.category__buttons-container{
+    width:fit-content;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:1rem;
+}
+
+footer{
+    background: var(--color-gray-900);
+    padding: 5rem 0 0;
+    box-shadow: inset 0  1.5rem 1.5rem rgba(0,0,0,0.2);
+}
+
+
+.footer__socials{
+    margin-inline:auto;
+    width:fit-content;
+    margin-bottom:5rem;
+    display: flex; 
+    justify-content:space-between;
+    align-items: center ;
+    gap: 1.2rem;
+}
+
+.footer__socials a{
+    background: var(--color-bg);
+    border-radius: 50%;
+    width:2.3rem;
+    height: 2.3rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer__socials a:hover {
+    background: var(--color-white);
+    color: var(--color-bg);
+}
+
+.footer__container{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+}
+footer h4{
+    color: var(--color-white);
+    margin-bottom: 0.6rem;
+}
+
+ 
+
+
+footer ul a{
+    opacity: 0.75;
+}
+footer ul a:hover{
+    letter-spacing: 0.2rem;
+    opacity: 1;
+}
+
+.footer__copyright{
+    text-align: center;
+    padding: 1.5rem 0;
+    border-top: 2px solid var(--color-bg);
 }
