@@ -315,7 +315,9 @@ footer h4{
 }
 
  
-
+footer ul li {
+    padding: 0.4rem 0;
+}
 
 footer ul a{
     opacity: 0.75;
@@ -329,4 +331,8 @@ footer ul a:hover{
     text-align: center;
     padding: 1.5rem 0;
     border-top: 2px solid var(--color-bg);
+    margin-top: 4rem;
 }
+
+
+
