@@ -230,18 +230,17 @@ nav button{
 ===================================================================*/
 
 .featured{
-    margin: top 8rem;
+    margin-top: 8rem;
 
 }
 
-featured_container{
+featured__container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap:4rem;
-
 }
 .featured .post__thumbnail{
-    height:fit-content;
+    height: fit-content;
 }
 
 /*==================================================================
@@ -389,7 +388,115 @@ footer ul a:hover{
 }
 
 
+/*=======================================================================================
+================= SINGLE POST ================================================================
+==============================================================================*/
 
+.singlepost {
+    margin:   0 2rem;
+
+}
+
+.singlepost__container{
+    width:var(--form-width);
+    background: var(--color-gray-900);
+    padding: 1rem 2rem 3rem;
+
+}
+
+.singlepost__thumbnail{
+    margin:1.5rem 0 1rem;
+}
+.singlepost__container p{
+    margin-top: 1rem;
+    line-height: 1.6rem;
+}
+
+/*=======================================================================================
+================= CATEGOTY POST ================================================================
+==============================================================================*/
+
+
+
+.category__title{
+    height:7rem;
+    margin-top: 4.5rem;
+    background: var(--color-gray-900);
+    display: grid;
+    place-items: center;
+}
+/*=======================================================================================
+================= EMPTY PAGE ================================================================
+==============================================================================*/
+.empty__page{
+    height:70vh;
+    display: grid;
+    place-content: center;
+}
+
+
+
+/*=======================================================================================
+GENERAL FORM
+==============================================================================*/
+
+.form__section{
+    display: grid;
+    place-items: center;
+    height: 100vh; 
+}
+.form__section-container{
+    width:var(--form-width);
+
+}
+
+.alert__message{
+    background: red;
+    padding: 0.8rem 1.4rem;
+    margin-bottom: 1rem;
+    border-radius: var(--card-border-radius-2);
+}
+
+.alert__message.error{
+    background: var(--color-red-light);
+    color: var(--color-red);
+}
+
+.alert__message.success{
+    background: var(--color-green-light);
+    color: var(--color-green);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.form__control{
+    display: flex;
+    flex-direction: 0.4rem;
+    gap:0.4rem;
+}
+
+input,textarea,select{
+    padding: 0.8rem 1.4rem;
+    background: var(--color-gray-900);
+    border-radius: var(--card-border-radius-2 );
+    resize:none;
+    color: var(--color-white);
+
+}
+
+.form__section small {
+    margin-top: 1rem;
+    display: block;
+
+}
+
+.form__section small a{
+    color:var(--color-primary)
+}
 
 /*============================================================================================
 ============    MEDIA QUERIES     ==============================================
@@ -520,11 +627,23 @@ footer ul a:hover{
         grid-template-columns: 1fr 1fr;
         
     }
+    /*====================== BLOG ===================*/
     .search__bar-container{
         width: var(--container-width-md);
 
     }
+    /*====================== SINGLE POST =================*/
+    .singlepost__container{
+        background-color: transparent;
+        padding:0;
+    }
+
+    /*====================== GENERAL FORM =================*/
+    .form__section container{
+        padding:3rem;
+    }
 }
+
 
 
 /*============================================================================================
@@ -558,5 +677,14 @@ footer ul a:hover{
         grid-template-columns: 1fr;
         text-align: center;
         gap: 2rem;
+    }
+    /*====================== BLOG================*/
+    .search__bar-container{
+        width:var(--container-width-md);
+
+    }
+    .singlepost__container{
+        background-color: transparent;
+        padding:0;
     }
 }
